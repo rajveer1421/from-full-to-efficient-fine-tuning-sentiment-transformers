@@ -132,10 +132,10 @@ This project systematically explores multiple fine-tuning techniques, highlighti
 
 ---
 
-### 🔹 4. Efficient Adapter Fine-Tuning (Best Efficiency)
+### 🔹 4. Parameter Efficient Fine Tuning Using Lora (Best Efficiency)
 
 **Approach**
-- Same adapter-based structure
+- Used LoraConfig from peft library of hugging face 
 - Reduced dimensionality
 - Minimal number of trainable parameters
 - Faster convergence with fewer epochs
@@ -153,7 +153,7 @@ This project systematically explores multiple fine-tuning techniques, highlighti
 | Full Fine-Tuning | All layers | 65% | High |
 | Selective Fine-Tuning | Encoder linear2 + classifier | **86%** | Moderate |
 | Additive (Adapter) | Adapter + classifier | 78% | Low |
-| Efficient Adapter | Minimal adapters | **85%** | **Very Low** |
+| LORA(PEFT) | Added Weight Matrix | **85%** | **Very Low** |
 
 ---
 
